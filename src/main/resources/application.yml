@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test2
+    username: nazardzh
+    password:
+    driverClassName: org.postgresql.Driver
+
+server:
+  port: 8003
+
+smtp:
+  host: smtp.gmail.com
+  port: 587
+  auth: true
+  starttls: true
+  my-email:
+  email-password: 

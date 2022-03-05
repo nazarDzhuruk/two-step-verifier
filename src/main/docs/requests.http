@@ -1,0 +1,14 @@
+###
+POST http://localhost:8003/api/v1/create-user
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "testUsername",
+  "email": "nazar.dzhuruk@gmail.com"
+}
+
+###
+// The verification number is a randomly generated number that needs to be sent in the URL after splitting the user id by /
+###
+PUT http://localhost:8003/api/v1/verify/{{userId}}}/{{verifier}}}
